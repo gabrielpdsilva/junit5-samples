@@ -25,6 +25,27 @@ class CalculatorTests {
 		Calculator calculator = new Calculator();
 		assertEquals(2, calculator.add(1, 1), "1 + 1 should equal 2");
 	}
+	
+	@Test
+	@DisplayName("2 - 1 = 1")
+	void subsTwoNumbers() {
+		Calculator calculator = new Calculator();
+		assertEquals(1, calculator.sub(2, 1), "2 - 1 should equal 1");
+	}
+	
+	@Test
+	@DisplayName("4 * 2 = 8")
+	void multsTwoNumbers() {
+		Calculator calculator = new Calculator();
+		assertEquals(8, calculator.mult(4, 2), "4 * 2 should equal 8");
+	}
+	
+	@Test
+	@DisplayName("8 / 2 = 4")
+	void divsTwoNumbers() {
+		Calculator calculator = new Calculator();
+		assertEquals(4, calculator.div(8, 2), "8 / 2 should equal 4");
+	}
 
 	@ParameterizedTest(name = "{0} + {1} = {2}")
 	@CsvSource({
