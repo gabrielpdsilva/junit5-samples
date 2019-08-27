@@ -79,7 +79,7 @@ class CalculatorTests {
 	})
 	void sub(double first, double second, double expectedResult) {
 		Calculator calculator = new Calculator();
-		assertEquals(expectedResult, calculator.add(first, second),
+		assertEquals(expectedResult, calculator.sub(first, second),
 				() -> first + " - " + second + " deveria ser " + expectedResult);
 	}
 	
@@ -96,7 +96,7 @@ class CalculatorTests {
 	})
 	void mult(double first, double second, double expectedResult) {
 		Calculator calculator = new Calculator();
-		assertEquals(expectedResult, calculator.add(first, second),
+		assertEquals(expectedResult, calculator.mult(first, second),
 				() -> first + " * " + second + " deveria ser " + expectedResult);
 	}
 	
@@ -113,7 +113,7 @@ class CalculatorTests {
 	})
 	void div(double first, double second, double expectedResult) {
 		Calculator calculator = new Calculator();
-		assertEquals(expectedResult, calculator.add(first, second),
+		assertEquals(expectedResult, calculator.div(first, second),
 				() -> first + " / " + second + " deveria ser " + expectedResult);
 	}
 }
